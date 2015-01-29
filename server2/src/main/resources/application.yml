@@ -1,9 +1,9 @@
 spring:
   application:
-    name: HelloServer
+    name: MicroServer2
 
 server:
-  port: 7111
+  port: 7211
 
 eureka:
   password: password

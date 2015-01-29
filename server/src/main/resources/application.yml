@@ -1,6 +1,6 @@
 spring:
   application:
-    name: HelloServer
+    name: MicroServer1
 
 server:
   port: 7111
