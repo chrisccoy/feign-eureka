@@ -19,7 +19,7 @@ public class Micro2Application {
 	@Autowired
 	DiscoveryClient client;
 
-	@RequestMapping("/microsvc1/dosomethingelse")
+	@RequestMapping("/microsvc2/dosomethingelse")
 	public String hello() {
 		ServiceInstance localInstance = client.getLocalServiceInstance();
 		return "Just did something Else: "+ localInstance.getServiceId()+":"+localInstance.getHost()+":"+localInstance.getPort();
