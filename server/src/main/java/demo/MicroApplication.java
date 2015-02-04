@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-@RestController
+@RestController 
 public class MicroApplication {
 	@Autowired
 	DiscoveryClient client;

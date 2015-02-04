@@ -1,5 +1,5 @@
 # sudo docker build -t chrisccoy/microsvcdemoclnt ./
-# sudo docker run -d --name democlnt --link msdemo:msdemo chrisccoy/microsvcdemoclnt
+# sudo docker run -d -p=7311:7311 --name democlnt --link msdemo:msdemo chrisccoy/microsvcdemoclnt
 #
 FROM dockerbase/java7
 MAINTAINER chrisccoy@gmail.com

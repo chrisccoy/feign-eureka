@@ -5,11 +5,16 @@ spring:
 server:
   port: 7211
 
+host:
+  name: localhost
+
+
 eureka:
   password: password
   client:
     serviceUrl:
-      defaultZone: http://user:${eureka.password}@msdemo:8761/eureka/
+ #     defaultZone: http://user:${eureka.password}@msdemo:8761/eureka/
+       defaultZone: http://user:${eureka.password}@${host.name}:8761/eureka/
   instance:
     leaseRenewalIntervalInSeconds: 10
     preferIpAddress: true
