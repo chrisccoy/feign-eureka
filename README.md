@@ -7,21 +7,20 @@ Assumes eureka (from [spring-cloud-samples](https://github.com/spring-cloud-samp
 
 `mvn package`
 
-## hello server
+## Micro server 1
 
-run `java -jar server/target/feign-eureka-hello-server-0.0.1-SNAPSHOT.jar`
+run `java -jar server/target/feign-eureka-micro1-0.0.1-SNAPSHOT.jar`
 
-verify it is functioning at [http://localhost:7111](http://localhost:7111)
+## Micro server 2
 
-You should see `Hello World: HelloServer:myhostname:7111`
+run `java -jar server/target/feign-eureka-micro2-0.0.1-SNAPSHOT.jar`
 
 ## hello client
 
 run `java -jar client/target/feign-eureka-hello-client-0.0.1-SNAPSHOT.jar`
 
-verify it is functioning at [http://localhost:7211](http://localhost:7211)
+verify it is functioning at [http://localhost:7311/dothis](http://localhost:7311/dothis)
 
-You should see `Hello World: HelloServer:myhostname:7111`
 
 ### hellow client error
 
@@ -39,6 +38,6 @@ It should go away shortly.
 
 ## See round robin load balancing in action
 
-run `java -jar server/target/feign-eureka-hello-server-0.0.1-SNAPSHOT.jar --server.port=7112`
+run `java -jar server/target/feign-eureka-micro1-0.0.1-SNAPSHOT.jar --server.port=7112`
 
-Go back to [http://localhost:7211](http://localhost:7211) and you should see both ports `7111` and `7112` in the output after a minute or two as you keep refreshing.
+Go back to [http://localhost:7311/dothis](http://localhost:7311/dothis) and you should see both ports `7111` and `7112` in the output after a minute or two as you keep refreshing.
