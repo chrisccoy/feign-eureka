@@ -1,6 +1,7 @@
 # feign-eureka
 Example of using feign with eureka
 
+
 Assumes eureka (from [spring-cloud-samples](https://github.com/spring-cloud-samples/eureka)) is running on http://localhost:8761
 
 ## building
